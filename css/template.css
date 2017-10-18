@@ -96,6 +96,7 @@ font-size: 30px;
 display: block;
 text-transform: capitalize;
 }	
+
 .section-2{
 background: #f8f8f8;
 display: block;
@@ -278,13 +279,13 @@ padding:5px 0;
 
 .org-section .img{
 display: inline-block;
-
+margin-top: 50px;
 }
 
 .org-section .img img{
-	height: 25px;
+	height: 30px;
 	width: auto;
-	margin-right:40px;
+	margin-right:30px;
 	vertical-align: middle;
 }
 
@@ -302,7 +303,7 @@ display: inline-block;
 }
 
 .section-4 .heading{
-	margin: 15px;
+	margin: 150px 0 50px;
 	font-size: 50px;
 	color:#000;
 	font-weight: bold;
@@ -497,3 +498,77 @@ opacity: .85;
 	margin:0 10px;
 }
 
+@media (max-width: 767px) {
+
+.section-1{
+	padding-bottom: 20px;
+}
+
+.sub-heading{
+margin-top: 10px;
+font-size:40px;
+color: #fff;
+line-height:50px;
+font-weight: bold;
+padding:20px 0 0px;
+
+}
+
+.sub-heading span{
+font-size: 22px;
+display: block;
+margin-top: 20px;
+text-transform: capitalize;
+}	
+
+.org-section{
+	display: block;
+	padding:10px 0 10px;
+	background-color: #fff;
+}
+
+
+.org-section .img {
+display:inline-block;
+margin-top: 20px;
+}
+
+.org-section .img img{
+	height: 20px;
+	width: auto;
+	margin:10px;
+	vertical-align: middle;
+}
+
+.section-4{
+	padding:50px 0;
+}
+
+.section-4 .heading{
+	margin:50px 0;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar{
+	background: #333;
+}
+
+.navbar-inverse .navbar-toggle{
+	margin-top: 20px;
+	border:0;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background: #dbdbdb;
+}
+
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	background: #fff;
+	border-top:1px solid #cecece;
+	box-shadow:0 0 3px 0 rgba(0,0,0,.15);
+}
+.section-2{
+	padding:20px 0;
+}
+
+}	

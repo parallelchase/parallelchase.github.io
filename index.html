@@ -11,7 +11,7 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/template.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -70,10 +70,9 @@
       </div><!-- /.container -->
     </div>
       <div class="org-section">
-        <div class="heading">Featured in</div>
         <div class="container">
           <div class="row">
-            <div class="col-md-11 center-block">
+            <div class="col-md-12 center-block">
               <div class="img"><img src="img/yt.png" alt="yourstory"></div>
               <div class="img"><img src="img/hp.png" alt="huffingtonpost"></div>
               <div class="img"><img src="img/mint.png" alt="Adage"></div>
@@ -85,15 +84,12 @@
           </div>
         </div>
       </div>
-<div id="skills" class="section-4">
+<div  class="section-4">
 
-  <div class="container">
+  <div id="skills" class="container">
     <div class="row">
-      <div class="device">
-      <img src="img/tab1.png">
-        <img src="img/phone1.png">
-    </div>
-    <div class="heading">SKILLS
+    
+    <div  class="heading">SKILLS
      </div>
 
       <div class="col-md-3">
@@ -177,7 +173,7 @@
     </div>
         
 
-<div class="section-2">
+<div id="work" class="section-2">
   <div class="container">
     <div class="row ">
       <div class="heading"> Companies & Roles</div>
@@ -243,7 +239,7 @@
                 </div>
                 </div><!-- /.container -->
               </div>
-                                    <div class="section-3">
+                                    <div id="blog" class="section-3">
                                       <div class="sub-heading">Authored Articles</div>
                                       <div class="container">
                                         <div class="row">
@@ -453,5 +449,33 @@ Email, Dynamic App Pages and more.</li>
                                     <script src="js/bootstrap.min.js"></script>
                                     <script src="js/particles.min.js"></script>
                                     <script src="js/poly.js"></script>
+                        
+                                    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+                                   
                                   </body>
                                 </html>
