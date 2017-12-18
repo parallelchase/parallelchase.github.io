@@ -1082,13 +1082,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #5031A9;
-  color:#fff;
-  padding-top: 100px;
+  background-color: #fff;
 }
 input,
 button,
@@ -4277,7 +4275,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 15px 15px;
-  margin-top: 10px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -4287,8 +4284,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand > img {
   display: block;
-  width: 30px;
-  height: auto;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -4594,11 +4589,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #fff;
-  border-color: #fff;
-  height: 80px;
-  box-shadow: 0 0 3px 0 rgba(0,0,0,.15);
-    -moz-box-shadow: 0 0 3px 0 rgba(0,0,0,.15);
+  background-color: #222;
+  border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4612,13 +4604,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #000;
+  color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #000;
+  color: #fff;
   background-color: transparent;
-  text-decoration: underline;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -4645,7 +4636,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #101010;
-  margin-top: 15px;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
@@ -5493,6 +5483,9 @@ button.list-group-item-danger.active:focus {
 .panel-footer {
   padding: 10px 15px;
   background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {
@@ -5500,6 +5493,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel > .list-group .list-group-item,
 .panel > .panel-collapse > .list-group .list-group-item {
+  border-width: 1px 0;
   border-radius: 0;
 }
 .panel > .list-group:first-child .list-group-item:first-child,
