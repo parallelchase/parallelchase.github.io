@@ -3,6 +3,19 @@ font-family: 'Muli', sans-serif;
 background:transparent;
 }
 
+
+.navbar-inverse .navbar-toggle{
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+  background: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar{
+  background-color: #555;
+}
+
 .center-block{
   float: none;
 }
@@ -1108,11 +1121,43 @@ width: 60px;
   color:#fff;
 }
 
+@media only screen and (max-width: 768px) {
 
 
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+border-color:#dbdbdb;
+background: #fff;
+}
+
+a.sign-up{
+  text-align: center;
+  margin:10px;
+  display: block;
+}
 
 
+.alert-box{
+  margin-top: 100px;
+}
 
+.main-section .heading{
+  margin-bottom: 10px;
+}
+
+.main-section .sub-heading{
+  font-size: 34px;
+  line-height: 50px;
+}
+
+img.img1, img.img2, img.img3{
+height: 20px;
+}
+
+.highlight{
+  margin-right: 10px;
+}
+
+}
 
 
 
