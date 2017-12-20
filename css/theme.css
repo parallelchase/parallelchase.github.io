@@ -1223,6 +1223,10 @@ width: 400px;
 .device-4{
   display: none;
 }
+.device-container{
+  margin-top:-150px;
+}
+
 
 }
 
